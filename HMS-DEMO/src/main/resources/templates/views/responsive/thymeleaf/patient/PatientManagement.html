@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/views/responsive/thymeleaf/fragments/common/head::head"/>
+
+
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+ .container {
+      margin-left: 100px;   /* Adjust this value to move the container to the right */
+      margin-top: 1px;     /*adjust to down*/              
+    }
+   .form-control{
+   margin-bottom:1px;
+   }
+   .row{
+   margin-bottom:0px;
+   
+   }
+</style>
+
+</head>
+<body>
+
+<div th:replace= "/views/responsive/thymeleaf/fragments/common/header::header"> </div>
+<div><!-- body -->
+
+
+
+<div class="topnav topnav-expand-lg">
+  <a class="active" href="#">PatientDetails</a>
+ 
+    
+  
+  <div class="topnav-right">
+    <a class="active" href="#search">
+    
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+      <label class="form-check-label" for="radio1">newpatient</label>
+    </div>
+    </a>
+    <a class="active" href="#about">
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+      <label class="form-check-label" for="radio1">oldpatient</label>
+    </div>
+    </a>
+  </div>
+</div>
+
+
+  <div class="container">
+<div class="container p-2 my-5 border">
+
+   
+  <div class="row" style="margin-top: -60px;" >
+    <div class="col p-2 bg-lightBlue text-black">
+    <form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+       <option>Title</option>
+        <option>Mr</option>
+        <option>Ms</option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label>
+   
+   
+  </form></div>
+    <div class="col p-2 bg-lightBlue text-black">
+            <input type="text" class="form-control" placeholder="New PatientName">
+           </div><!--text black div-->
+    <div class="col p-2 bg-lightBlue text-black"> <input type="text" class="form-control" placeholder="LastName"></div><!--text black div-->
+    <div class="col p-2 bg-lightBlue text-black">
+    <form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>gender</option>
+        <option>male</option>
+        <option>female</option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+   </div><!--text black div-->
+    <div class="col p-2 bg-lightBlue text-black"><form action="/action_page.php">
+  <label for="birthday"></label>
+  <input type="date" id="birthday" name="birthday">
+  
+</form></div><!--text black div-->
+  </div><!--row close div-->
+  <br>
+       <div class="row">
+    <div class="col p-2 bg-lightBlue text-black"><input type="text" class="form-control " placeholder="Years"></div>
+    <div class="col p-2 bg-lightBlue text-black"><input type="text" class="form-control" placeholder="Months"></div>
+    <div class="col p-2 bg-lightBlue text-black"><input type="text" class="form-control" placeholder="Days"></div>
+    <div class="col p-2 bg-lightBlue text-black"><input type="text" class="form-control" placeholder="MobileNO"></div>
+    <div class="col p-2 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Parent Husband's name</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+   </div>
+    <div class="col p-3 bg-lightBlue text-black"><input type="text" class="form-control" placeholder="ParentHusband name"></div>
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Religion</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form></div>
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Marital status</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label>
+      </form>
+      </div>   <!-- row close -->
+   </div><!--textblack closed-->
+   
+   
+   <div class="row">
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Indian</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+    </div>
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Blood Group</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+    </div>
+     
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Select occupation</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+      </div>
+     <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>AndhraPradesh</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+      </div>
+      <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Select city</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+      </div>
+      <div class="col p-3 bg-lightBlue text-black"> <input type="text" class="form-control" placeholder="Village"></div>
+   
+  </div><!-- row close -->
+   <div class="row">
+    <div class="col p-3 bg-lightBlue text-black">
+           <form action="/action_page.php">
+        <div class="form-floating mb-3 mt-3">
+            <textarea class="3form-control" id="comment" name="text" placeholder=""></textarea>
+            <label for="comment">Address</label>
+        </div>
+    </form>
+   </div>
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Idproof</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+      </div><!--text close-->
+      <div class="col p-3 bg-lightBlue text-black"><input type="text" class="form-control" placeholder="Enter Id number">
+    </div>
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>AndhraPradesh</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+      </div>
+      <div class="col p-3 bg-lightBlue text-black"><input type="text" class="form-control" placeholder="Health issue"></div>
+  </div><!-- row -->
+  
+  <div class="row">
+    <div class="col p-3 bg-lightBlue text-black"></div>
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Referral Type</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+      </div>
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Select Organization</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+      </div>
+      
+       <div class="col p-3 bg-lightBlue text-black"> <form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Patient Tariff</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form></div>
+  </div>
+  <div class="row">
+      <div class="col p-3 bg-lightBlue text-black">VISIT TYPE:NEWVISIT</div>
+    <div class="col p-3 bg-lightBlue text-black">REGISTRATION VALIDITY NO-()</div>
+    </div><!-- row close -->
+    
+     <div class="row">
+      <div class="col p-3 bg-lightBlue text-black">CONSULTANT VALIDITY:NO-()</div>
+</div>
+</div>
+</div>
+
+
+<!-- -container close -->
+
+<!-- -container open -->
+<h4>Appointment Details</h4>
+<!--  <div class="container p-5 my-5 bg-dark text-white">-->
+<div class="container p-4 my-5 border">
+
+<div class="row">
+      <div class="col p-3 bg-lightBlue text-black">
+     <!-- 1. --> <form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Select Location</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+       </div>
+       
+      <!-- 2 -->
+      <div class="col p-3 bg-lightBlue text-black"><form action="/action_page.php">
+  <label for="birthday"></label>
+  <input type="date" id="birthday" name="birthday">
+  
+</form>
+</div><!--text black div--> 
+      <div class="col p-3 bg-lightBlue text-black"><input type="text" class="form-control" placeholder="Token"> </div>
+      <div class="col p-3 bg-lightBlue text-black">.col </div>
+      
+ <div class="row">
+ 
+  <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Select consultant</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+      </div>         <!-- select location -->
+      
+      
+   <div class="col p-3 bg-lightBlue text-black"><input type="text" class="form-control" placeholder="DoctorCode"></div>
+    <div class="col p-3 bg-lightBlue text-black"><input type="text" class="form-control" placeholder="Specialization"></div>
+ </div><!-- row close -->
+ 
+</div>
+</div>
+</div>
+
+<!-- 3rd container box -->
+<p>Fees Details</p>
+<!--  <div class="container p-5 my-5 bg-dark text-white">-->
+<div class="container p-5 my-5 border">
+
+
+<div class="row">       <!-- 3rd container 1st row -->
+ <div class="col p-3 bg-lightBlue text-black"><p>Registration fee</p><input type="text" class="form-control" placeholder=""></div>
+  <div class="col p-3 bg-lightBlue text-black"><p>Disc(%)</p> <input type="text" class="form-control" placeholder="fee"></div>
+   <div class="col p-3 bg-lightBlue text-black"><p>Disc(%)</p><input type="text" class="form-control" placeholder="fee"></div>
+    <div class="col p-3 bg-lightBlue text-black"><p>Registration final amount</p><input type="text" class="form-control" placeholder="fee"> </div>
+    
+</div>
+<div class="row">  <!-- 3rd container 2nd row -->
+
+ <div class="col p-3 bg-lightBlue text-black"><p>Consultation fees</p><input type="text" class="form-control" placeholder=""></div>
+  <div class="col p-3 bg-lightBlue text-black"> <p>Disc(%)</p><input type="text" class="form-control" placeholder="fee"></div>
+   <div class="col p-3 bg-lightBlue text-black"><p>Disc(%)</p><input type="text" class="form-control" placeholder="fee"></div>
+    <div class="col p-3 bg-lightBlue text-black"><p>Consultation final amount</p><input type="text" class="form-control" placeholder="fee"> </div>
+    
+</div>
+
+<div class="row">  <!-- 3rd container 3rd row -->
+<div class="col p-3 bg-lightBlue text-black"><p>Total amount</p><input type="text" class="form-control" placeholder=""></div>
+  <div class="col p-3 bg-lightBlue text-black"> <p>Disc(%)</p><input type="text" class="form-control" placeholder="fee"></div>
+   <div class="col p-3 bg-lightBlue text-black"><p>Disc(%)</p><input type="text" class="form-control" placeholder="fee"></div>
+    <div class="col p-3 bg-lightBlue text-black"><p>Total Bill amount</p><input type="text" class="form-control" placeholder="fee"> </div>
+    </div>
+   
+   <div class="row">  <!-- 3rd container 4th row --> 
+   <div class="col p-3 bg-lightBlue text-black"><p>Amount Received</p><input type="text" class="form-control" placeholder=""></div>
+  <div class="col p-3 bg-lightBlue text-black"> <p>Change_Given</p><input type="text" class="form-control" placeholder="fee"></div>
+   <div class="col p-3 bg-lightBlue text-black"><p>Balance</p><input type="text" class="form-control" placeholder="fee"></div>
+    <div class="col p-3 bg-lightBlue text-black"><p>Status</p><input type="text" class="form-control" placeholder="fee"> </div>
+   
+   </div>   <!-- row close -->
+    </div>     <!-- border close-- -->
+    </div><!-- container close -->
+    
+
+</div>
+
+
+
+
+
+<div th:replace= "/views/responsive/thymeleaf/fragments/common/footer::footer"> 
+</div>
+
+
+</body>
+</html>

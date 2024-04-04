@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+.container {
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-right {
+  display: flex;
+}
+.navbar {
+  background-color: white;
+}
+
+
+.navbar-right .nav-item {
+  margin-left: 10px; /* Adjust as needed */
+}
+ .icon-bar {
+      background-color: #000000;  /*black*/
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 70px;
+      z-index: 1031; /* Bootstrap's z-index for fixed elements */
+    }
+    .icon-bar .nav-link {
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }

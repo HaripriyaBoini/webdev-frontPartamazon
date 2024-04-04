@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container mt-3 ">
+  <h2>Accordion Example of HMS</h2>
+  <strong>Patient Details</strong>
+  <div id="accordion">
+    <div class="card" >
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+        <strong>Patient Details</strong>
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+        
+    
+  <div style="border:0;background-color: skyblue; width:85vw; height: 300px;">
+    <div class="row">
+    <div class="col p-3 bg-lightBlue text-black">
+    <form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+     
+        <option >Title</option>
+      
+        <option>Mr</option>
+        <option>Ms</option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label>
+   
+   
+  </form></div>
+    <div class="col p-3 bg-lightBlue ">
+    
+            <input type="text" class="form-control" placeholder="New PatientName" style="color:red;">
+           </div><!--text black div-->
+    <div class="col p-3 bg-lightBlue text-black"> <input type="text" class="form-control" placeholder="LastName"></div><!--text black div-->
+    <div class="col p-3 bg-lightBlue text-black">
+    <form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>gender</option>
+        <option>male</option>
+        <option>female</option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+   </div><!--text black div-->
+    <div class="col p-3 bg-lightBlue text-black"><form action="/action_page.php">
+  <label for="birthday"></label>
+  <input type="date" id="birthday" name="birthday">
+  
+</form></div><!--text black div-->
+  </div><!--row close div-->
+  <br>
+       <div class="row" >
+    <div class="col p-3 bg-lightBlue text-black"  >
+    <input type="text" class="form-control" placeholder="Years"></div>
+    <div class="col p-3 bg-lightBlue text-black">
+    <input type="text" class="form-control" placeholder="Months"></div>
+    <div class="col p-3 bg-lightBlue text-black">
+    <input type="text" class="form-control" placeholder="Days"></div>
+    <div class="col p-3 bg-lightBlue text-black">
+    <input type="text" class="form-control" placeholder="MobileNO" ></div>
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Parent Husband's name</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+   </div>
+    <div class="col p-3 bg-lightBlue text-black">
+    <input type="text" class="form-control" placeholder="ParentHusband name"></div>
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Religion</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form></div>
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Marital status</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label>
+      </form>
+      </div>   <!-- row close -->
+   </div><!--textblack closed-->
+   
+   
+   <div class="row">
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Indian</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+    </div>
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Blood Group</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+    </div>
+     
+    <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Select occupation</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+      </div>
+     <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>AndhraPradesh</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+      </div>
+      <div class="col p-3 bg-lightBlue text-black"><form action="#">
+   
+      <select class="form-select" id="sel1" name="sellist">
+        <option>Select city</option>
+        <option></option>
+        <option></option>
+       
+      </select>
+      <label for="sel1" class="form-label"> </label></form>
+      </div>
+      <div class="col p-3 bg-lightBlue text-black"> <input type="text" class="form-control" placeholder="Village"></div>
+        
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        <strong>Appointment Details</strong>
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+                    <div style="border: groove;background-color: skyblue; width:85vw; height: 140px;">
+    
+    <div style="display: flex;column-gap: 20px;" >
+     <select class="form-select" id="sel1" name="sellist" style="margin-top:10px; width:140px;">
+         <option >SelectLocation</option>
+         <option></option>
+         <option></option>
+  </select>
+  <form action="/action_page.php">
+  <label for="birthday"></label></form>
+  <input type="date" id="birthday" name="birthday" style="margin-top:10px; margin-left:-40px; width:120px;">
+  <input type="text" class="form-control" placeholder="Token" style="margin-top:10px; margin-left:-10px; width:90px;"></div>
+  
+  <div style="display: flex;column-gap: 20px;" >
+     <select class="form-select" id="sel1" name="sellist" style=" height:50px; width:150px; margin-top: 10px;">
+         <option >Select Consultant </option>
+         <option></option>
+         <option></option>
+  </select>
+    <input type="text" class="form-control" placeholder="Doctor Code" style="margin-top: 10px; margin-left:-20px;">
+  
+  <input type="text" class="form-control" placeholder="Specilization" style="margin-top: 10px; margin-left:-20px;">
+ </div>
+    </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+        <strong>Fee Details</strong>
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+        <div style="border: groove;background-color: skyblue; width:90vw; height: 180px;">
+        
+         
+        <label for="registration" style="margin-top:10px;">Registration Fee:</label>
+         <input type="text" id="total_fee" name="fee" >
+        <label for="diso">Diso(%):</label>
+         <input type="text" id="total_fee" name="fee" >
+                 <label for="diso">Diso($):</label>
+         <input type="text" id="total_fee" name="fee" >
+                 <label for="diso">Reg Final Amount:</label>
+         <input type="text" id="total_fee" name="fee" >
+                 <label for="registration" style="margin-top:15px;">Consultation Fee:</label>
+         <input type="text" id="total_fee" name="fee" >
+        <label for="diso">Diso(%):</label>
+         <input type="text" id="total_fee" name="fee" >
+                 <label for="diso">Diso($):</label>
+         <input type="text" id="total_fee" name="fee" >
+                 <label for="diso">Cons Final Amount:</label>
+         <input type="text" id="total_fee" name="fee" >
+         <label for="registration" style="margin-top:15px;">Total Amount:</label>
+         <input type="text" id="total_fee" name="fee" >
+        <label for="diso">Diso(%):</label>
+         <input type="text" id="total_fee" name="fee" >
+                 <label for="diso">Diso($):</label>
+         <input type="text" id="total_fee" name="fee" >
+                 <label for="diso">Total Bill Amount:</label>
+         <input type="text" id="total_fee" name="fee" >
+                 <label for="registration" style="margin-top:15px;">Amt Received:</label>
+         <input type="text" id="total_fee" name="fee" >
+        <label for="diso">Change_Given:</label>
+         <input type="text" id="total_fee" name="fee" >
+                 <label for="diso">Balance:</label>
+         <input type="text" id="total_fee" name="fee" >
+                 <label for="diso">Status:</label>
+         <input type="text" id="total_fee" name="fee" >
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
